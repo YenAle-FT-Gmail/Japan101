@@ -14,8 +14,8 @@ const VISA_CATEGORIES = [
 
 const FEE_SCHEDULE: Record<string, { fee: number; label: string; note?: string }> = {
     engineer_specialist: { fee: 4000, label: "Standard Extension" },
-    highly_skilled_professional: { fee: 7000, label: "HSP Extension" },
-    permanent_resident: { fee: 200000, label: "Permanent Residence", note: "Fee increased from ¥8,000 to ¥200,000 effective April 2026." },
+    highly_skilled_professional: { fee: 4000, label: "HSP Extension" },
+    permanent_resident: { fee: 200000, label: "Permanent Residence", note: "Fee increased from ¥8,000 to ¥200,000 under the 2024 Immigration Control Act revision." },
     spouse_of_japanese: { fee: 4000, label: "Spouse Visa Extension" },
     business_manager: { fee: 4000, label: "Business Manager Extension" },
 };
@@ -114,8 +114,8 @@ export default function VisaPage() {
                         key={t}
                         onClick={() => setTab(t)}
                         className={`px-4 py-2 rounded-t-lg text-sm font-medium transition-colors ${tab === t
-                                ? "bg-slate-800 text-white border-b-2 border-blue-500"
-                                : "text-slate-500 hover:text-white"
+                            ? "bg-slate-800 text-white border-b-2 border-blue-500"
+                            : "text-slate-500 hover:text-white"
                             }`}
                     >
                         {t === "overview" ? "📋 Overview & Fees" : t === "xml" ? "📄 XML Draft Generator" : "📁 Evidence Batcher"}
@@ -159,10 +159,10 @@ export default function VisaPage() {
                     )}
 
                     <Card className="border-amber-500/30 bg-amber-500/5">
-                        <h3 className="font-semibold text-amber-400 mb-2">2026 ISA Update</h3>
+                        <h3 className="font-semibold text-amber-400 mb-2">ISA Fee Update</h3>
                         <ul className="text-sm text-slate-400 space-y-1 list-disc list-inside">
-                            <li>Permanent Residence fee increased to ¥200,000 (from ¥8,000)</li>
-                            <li>HSP visa extension fee: ¥7,000</li>
+                            <li>Permanent Residence fee increased to ¥200,000 (from ¥8,000) under 2024 revision</li>
+                            <li>Standard visa extension / change of status: ¥4,000</li>
                             <li>Online application available via ISA Online System</li>
                             <li>25 MB multi-file upload limit for evidence documents</li>
                         </ul>

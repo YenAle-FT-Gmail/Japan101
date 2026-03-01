@@ -31,7 +31,7 @@ SEARCH_INDEX: list[dict] = [
         "description": "File a moving notification when changing your address within or between municipalities.",
         "logic_flow": "hikkoshi",
         "url": "/procedures/moving",
-        "gov_url": "https://www.digital.go.jp/policies/moving_onestop",
+        "gov_url": "https://www.digital.go.jp/policies/moving_onestop_service",
     },
     {
         "form_id": "ID-NHI-201",

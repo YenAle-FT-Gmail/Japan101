@@ -90,7 +90,7 @@ export default function NhiPage() {
                 <Link href="/tools/pdf-overlay">
                     <Button variant="secondary">📝 Fill NHI Form with PDF Overlay</Button>
                 </Link>
-                <VerifyButton url="https://www.city.minato.tokyo.jp/" label="Official NHI Information" />
+                <VerifyButton url="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/" label="MHLW: NHI Official Information" />
             </div>
         </div>
     );

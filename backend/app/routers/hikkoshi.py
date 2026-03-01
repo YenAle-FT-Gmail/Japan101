@@ -108,7 +108,7 @@ def _build_task_list(req: MovingRequest, ref: str) -> list[dict]:
         "task": "Submit Moving Out Notification (転出届) via MynaPortal",
         "status": "completed_digitally",
         "form_id": "ID-JIN-101",
-        "verify_url": "https://www.digital.go.jp/policies/moving_onestop",
+        "verify_url": "https://www.digital.go.jp/policies/moving_onestop_service",
     })
     task_id += 1
 
@@ -201,8 +201,8 @@ def _build_task_list(req: MovingRequest, ref: str) -> list[dict]:
         "id": task_id, "category": "Post Office",
         "task": "Submit mail forwarding request (転居届) at Post Office",
         "status": "pending",
-        "note": "Can be done online at https://welcometown.post.japanpost.jp/",
-        "verify_url": "https://welcometown.post.japanpost.jp/",
+        "note": "Can be done online at https://www.post.japanpost.jp/service/tenkyo/",
+        "verify_url": "https://www.post.japanpost.jp/service/tenkyo/",
     })
     task_id += 1
 
@@ -277,7 +277,7 @@ async def start_moving(req: MovingRequest):
             "Passport (if address page needs update)",
         ],
         myna_portal_url="https://myna.go.jp/SCK0101_02_001/SCK0101_02_001_InitDiscs498.form",
-        verify_url="https://www.digital.go.jp/policies/moving_onestop",
+        verify_url="https://www.digital.go.jp/policies/moving_onestop_service",
     )
 
 

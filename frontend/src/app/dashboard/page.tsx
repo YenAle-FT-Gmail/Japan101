@@ -183,7 +183,7 @@ export default function DashboardPage() {
                     based on your ward&apos;s migration status.
                 </p>
                 <div className="mt-3">
-                    <VerifyButton url="https://www.digital.go.jp/policies/gov-cloud" label="Digital Agency Gov-Cloud" />
+                    <VerifyButton url="https://www.digital.go.jp/policies/gov_cloud" label="Digital Agency Gov-Cloud" />
                 </div>
             </Card>
         </div>

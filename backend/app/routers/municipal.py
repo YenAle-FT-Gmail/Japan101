@@ -153,7 +153,7 @@ PROCEDURE_DB: dict[str, ProcedureInfo] = {
         ],
         estimated_time_minutes=30,
         can_do_online=True,
-        gov_url="https://www.digital.go.jp/policies/moving_onestop",
+        gov_url="https://www.digital.go.jp/policies/moving_onestop_service",
     ),
     "ID-NHI-201": ProcedureInfo(
         form_id="ID-NHI-201",

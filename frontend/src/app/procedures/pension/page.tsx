@@ -7,13 +7,13 @@ const PENSION_TYPES = [
     {
         type: "National Pension (国民年金)",
         who: "Self-employed, freelancers, unemployed, students",
-        monthly: "¥16,980 (2026)",
+        monthly: "¥17,510 (FY2025: Apr 2025–Mar 2026)",
         badge: "Category 1" as const,
     },
     {
         type: "Employees' Pension (厚生年金)",
         who: "Company employees — deducted from salary automatically",
-        monthly: "~8-9% of salary (employer matches)",
+        monthly: "~9.15% of salary (employer matches — 18.3% total)",
         badge: "Category 2" as const,
     },
     {

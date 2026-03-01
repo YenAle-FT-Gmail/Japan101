@@ -32,7 +32,7 @@ VISA_FEES = {
         "revenue_stamp": True,
     },
     "extension_hsp": {
-        "fee": 7000,
+        "fee": 4000,
         "description": "Highly Skilled Professional (HSP) visa extension",
         "revenue_stamp": True,
     },
@@ -43,9 +43,9 @@ VISA_FEES = {
     },
     "permanent_residence": {
         "fee": 200000,
-        "description": "Permanent Residence application (2026 updated fee)",
+        "description": "Permanent Residence application (updated fee)",
         "revenue_stamp": True,
-        "note": "Fee increased from ¥8,000 to ¥200,000 effective April 2026.",
+        "note": "Fee increased from ¥8,000 to ¥200,000 under the 2024 Immigration Control Act revision (effective 2025).",
     },
     "re_entry_single": {
         "fee": 3000,
@@ -113,7 +113,7 @@ VISA_CATEGORIES = {
             "Resident certificate (住民票)",
             "Guarantor documents",
         ],
-        "note": "¥200,000 fee effective April 2026. 10+ years residency typically required.",
+        "note": "¥200,000 fee under the 2024 Immigration Control Act revision (effective 2025). 10+ years residency typically required.",
     },
     "spouse_of_japanese": {
         "name": "Spouse or Child of Japanese National",
@@ -234,7 +234,7 @@ def _generate_isa_xml(req: XMLDraftRequest) -> str:
 @router.get("/fees")
 async def list_fees():
     """List all 2026 ISA fee schedule items."""
-    return {"fees": VISA_FEES, "note": "Permanent Residence fee updated to ¥200,000 for 2026."}
+    return {"fees": VISA_FEES, "note": "Permanent Residence fee updated to ¥200,000 under the 2024 revision."}
 
 
 @router.post("/fees/calculate")

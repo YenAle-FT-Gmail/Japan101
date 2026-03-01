@@ -14,7 +14,7 @@ const PROCEDURES = [
     description:
       "File a moving notification when changing your address within or between municipalities.",
     href: "/procedures/moving",
-    govUrl: "https://www.digital.go.jp/policies/moving_onestop",
+    govUrl: "https://www.digital.go.jp/policies/moving_onestop_service",
     keywords: "move moving relocate address hikkoshi tenshutsu apartment house",
     icon: "🏠",
   },

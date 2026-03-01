@@ -51,7 +51,7 @@ export default function MovingPage() {
                         <p className="text-slate-400">Moving / Change of Address — 転入届・転出届</p>
                     </div>
                 </div>
-                <VerifyButton url="https://www.digital.go.jp/policies/moving_onestop" />
+                <VerifyButton url="https://www.digital.go.jp/policies/moving_onestop_service" />
             </div>
 
             {/* Steps Indicator */}
@@ -170,8 +170,8 @@ export default function MovingPage() {
                                     className="flex items-start gap-3 p-3 rounded-lg bg-slate-800/50 border border-slate-700/50"
                                 >
                                     <div className={`mt-0.5 flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold ${task.status === "digital"
-                                            ? "bg-emerald-500/20 text-emerald-400"
-                                            : "bg-slate-700 text-slate-400"
+                                        ? "bg-emerald-500/20 text-emerald-400"
+                                        : "bg-slate-700 text-slate-400"
                                         }`}>
                                         {task.status === "digital" ? "✓" : i + 1}
                                     </div>
